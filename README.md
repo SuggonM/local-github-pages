@@ -18,7 +18,7 @@ The generated preview closely matches GitHub's deployment runner, with negligibl
 	```bash
 	bundle install
 	```
-3. Copy `example.env` to `.env` and edit it
+3. **Optional:** Copy `example.env` to `.env` and edit the values. This step deals with repo naming and github API calls
 	```bash
 	cp example.env .env
 	```
@@ -31,5 +31,6 @@ To start the local server for preview, run `runserver.sh` with the path to your 
 The path defaults to the current directory if not specified.
 
 > [!Important]\
-> Remember to configure `.env` with your github API token, and the preview repository's name.\
+> For resolving the repo name and github metadata variables, `.env` needs to be configured as mentioned in [step 3](#initial-setup) of the setup.
+>
 > NEVER commit your API tokens in the public!
