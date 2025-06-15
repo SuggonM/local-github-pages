@@ -5,6 +5,8 @@ Unlike the half-baked guide on [official docs](https://docs.github.com/en/pages/
 
 The generated preview closely matches GitHub's deployment runner, with negligible differences in a few <!--{% raw %}--> `{{ site.github }}` <!--{% endraw %}--> values. All page themes and plugins listed in [github pages dependencies](https://pages.github.com/versions/) come bundled with the initial setup. This includes QoL plugins such as `jekyll-github-metadata`, `jekyll-optional-front-matter`, etc.
 
+While most plugins in the list are loaded by default on github pages, some need to be explicitly enabled via the `plugins:` list in `_config.yml`.
+
 ## Initial Setup
 1. Make sure `ruby`, `gem` and `bundler` are installed
 	```bash
