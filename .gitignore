@@ -1,4 +1,10 @@
 .env
-Gemfile.lock
-vendor
 _site
+
+# gem installation path
+vendor
+
+# don't "lock" the version of github-pages gem
+# so that user can perform a clean upgrade
+# https://github.com/github/pages-gem
+Gemfile.lock
